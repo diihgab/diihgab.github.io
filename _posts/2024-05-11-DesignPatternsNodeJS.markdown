@@ -243,9 +243,9 @@ async function fetchAndProcessData(url) {
 
 **Contras**
 
-**Limitado as funções async:** Somente funções declaradas com `async` podem usar `await`.
-**Nuances de tratamento de erros:** `try...catch` ainda são necessários para tratamento de erros nas funções `async`.
-**Possível uso indevido:** o uso excessivo de `await` pode bloquear o loop de eventos, impactando o desempenho.
+- **Limitado as funções async:** Somente funções declaradas com `async` podem usar `await`.
+- **Nuances de tratamento de erros:** `try...catch` ainda são necessários para tratamento de erros nas funções `async`.
+- **Possível uso indevido:** o uso excessivo de `await` pode bloquear o loop de eventos, impactando o desempenho.
 
 Isso é tudo sobre *Design Patterns* e suas relações assincronicidade em *NodeJS*.
 

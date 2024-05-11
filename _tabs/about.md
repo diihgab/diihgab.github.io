@@ -1,9 +1,8 @@
 ---
-title: Sobre
+# the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
 ---
 
-Olá!
-
-Este blog é um local para guardar idéias sem exagerar nos termos técnicos.
+> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
+{: .prompt-tip }

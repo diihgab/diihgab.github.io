@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+</head>
+<body>
+
+<header>
+    <h1>{{ page.title }}</h1>
+</header>
+
+<main>
+    <article>
+        <h2>{{ page.title }}</h2>
+        <p>{{ content }}</p>
+    </article>
+
+    <!-- Formulário de Comentários Staticman -->
+    <form action="https://api.staticman.net/v2/entry/diihgab/diihgab.github.io/main/comments" method="POST">
+        <input type="hidden" name="options[redirect]" value="https://seusite.com/thank-you">
+        <input type="hidden" name="options[slug]" value="{{ page.slug }}">
+        <input type="text" name="name" placeholder="Seu nome">
+        <input type="email" name="email" placeholder="Seu e-mail">
+        <textarea name="comment" placeholder="Seu comentário"></textarea>
+        <button type="submit">Enviar Comentário</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; {{ site.title }} {{ "now" | date: "%Y" }}</p>
+</footer>
+
+</body>
+</html>

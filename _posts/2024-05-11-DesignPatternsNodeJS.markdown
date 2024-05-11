@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Design Patterns Async no NodeJS"
+title: "Design Patterns na Programação Assíncrona em NodeJS"
 date: 2024-05-11 03:10:00 -0300
 categories: [Arquitetura de Software, Sistemas Distribuídos]
 tags: desenvolvimentoweb padroesassincronos callbackhell asyncawait designpatterns

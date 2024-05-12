@@ -161,7 +161,7 @@ defaults:
     values:
       comments: false
   - scope:
-      path: "assets/img/favicons"
+      path: 
       type: tabs # see `site.collections`
     values:
       layout: page

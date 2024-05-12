@@ -109,7 +109,7 @@ O *Promise Pattern* fornece um mecanismo para lidar com operações assíncronas
 ## **Exemplos de código**
 Uso básico do *Promise*:
 
-```javascript
+```javascript 
 const fs = require('fs');
 
 function readFileAsync(nome do arquivo) {

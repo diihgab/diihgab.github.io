@@ -7,7 +7,7 @@ tags: desenvolvimentoweb padroesassincronos callbackhell asyncawait designpatter
 image: "/assets/img/nodejs.jpeg"
 ---
 
-Antes de começar, vamos a uma breve introdução ao **Design Patterns**, onde representam soluções estabelecidas e generalizadas para problemas comumente recorrentes encontrados durante o desenvolvimento de software, funcionando mais como *projetos conceituais* ou *modelos adaptáveis* ​​a vários contextos.
+Antes de começarmos, vamos a uma breve introdução ao **Design Patterns**, onde representam soluções estabelecidas e generalizadas para problemas comumente recorrentes encontrados durante o desenvolvimento de software, funcionando mais como *projetos conceituais* ou *modelos adaptáveis* ​​a vários contextos.
 
 O *Design Patterns* oferece vários benefícios como:
 

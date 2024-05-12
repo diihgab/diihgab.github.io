@@ -4,8 +4,8 @@ icon: fas fa-mug-hot
 order: 4
 ---
 
-Gostou do conteúdo? Gostou dos bots?
+Gostou do conteúdo? Gostou dos artigos e projetos?
 
-Envie um pix para `bots@grf.xyz`.
+Envie um pix para `diegogabriel698@gmail.com`.
 
-<img src="/assets/img/pix.jpg" alt="QRCode da chave pix bots@grf.xyz" style="width:50%">
+<img src="/assets/img/pix.jpg" alt="QRCode da chave pix" style="width:50%">

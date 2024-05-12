@@ -17,18 +17,18 @@ O *Design Patterns* oferece vários benefícios como:
 
 No NodeJS, onde tudo é executado de forma *assíncrona*, dominar as *patterns assíncronas* é crucial, pontuarei os principais motivos:
 
-**1. Callbacks:** Os clássicos callbacks, aqui as funções são passadas como argumentos para operações assíncronas que são chamadas após a conclusão. Onde ocasiona o famoso *"callback hell"* onde as funções são aninhadas, mas ainda é amplamente utilizado.
+**1. Callbacks:** Os clássicos callbacks, aqui as funções são passadas como argumentos para operações assíncronas que são chamadas após a finalização. Onde pode ocasionar a famosa *"callback hell"* (calma que irei explicar com mais detalhes quando chegarmos lá) onde as funções são aninhadas, mas ainda é amplamente utilizado.
 
 **2. Promises:** É oferecido uma maneira mais limpa de gerenciar o fluxo assíncrono. Representam o resultado eventual *(sucesso ou falha)* de uma operação, permitindo encadeamento e tratamento de erros.
 
 **3. Async/Await:** Um patamar acima do *Promises*, onde o código assíncrono fica bem parecido com um código síncrono. Onde as funções `async` e `await` podem garantir um fluxo mais limpo.
 
-Agora que demos uma breve introdução, podemos começar o artigo :)
-Onde veremos os principais *patterns assíncronos* do NodeJS.
+Agora que demos uma breve introdução sobre as três *Patterns* mais utilizadas, podemos começar o artigo :)
+Onde veremos com mais detalhes essas três *patterns assíncronas* atuando no *NodeJS* com mais detalhes.
 
 # **Callback Pattern**
 
-O *Callback Pattern* é um conceito fundamental em *NodeJS*, permitindo lidar com operações assíncronas com eficiência. Envolve passar uma função *(o callback)* como argumento para outra função, que então invoca o retorno de chamada após a conclusão de sua tarefa assíncrona. Isso permite que seu código continue executando outras operações enquanto a tarefa assíncrona está em andamento, promovendo comportamento sem bloqueio e uso eficiente do loop de eventos.
+O *Callback Pattern* (também conhecido como *Retorno de Chamada*) é um conceito fundamental em *NodeJS*, permitindo lidar com operações assíncronas com eficiência. Envolve passar uma função *(o Callback)* como argumento para outra função, que então invoca o nosso *Callback* após a conclusão de sua tarefa assíncrona. Isso permite que seu código continue executando outras operações enquanto a tarefa assíncrona está em andamento, promovendo comportamento sem bloqueio e uso eficiente do loop de eventos.
 
 ## **Principais casos de uso**
 
@@ -39,7 +39,7 @@ O *Callback Pattern* é um conceito fundamental em *NodeJS*, permitindo lidar co
 - **Agendamento de tarefas:** Execução de funções após um atraso ou em intervalos específicos.
 
 ## **Exemplos de código**
-Um uso básico *Callback*:
+Um uso básico de *Callback*:
 
 ```javascript
 fs.readFile('arquivo.txt', (err, data) => {
@@ -90,13 +90,13 @@ getUser(1, (err, user) => {
 - **Conceito familiar:** Presente em muitas linguagens de programação e frameworks.
 
 **Contras**
-- **Callback Hell:** Retornos de chamada aninhados podem levar a códigos complexos e difíceis de ler.
-- **O tratamento de erros pode ser complicado:** Gerenciar erros em retornos de chamada aninhados pode ser desafiador.
-- **Difícil de testar:** Testar código com retornos de chamada pode ser mais complexo.
+- **Callback Hell:** Esse tipos de retornos de chamada aninhados podem levar a códigos complexos e difíceis de ler.
+- **O tratamento de erros pode ser complicado:** Gerenciar erros em *Callbacks* aninhados pode ser desafiador.
+- **Difícil de testar:** Testar código com *Callbacks* pode ser mais complexo.
 
 # **Promise Pattern**
 
-O *Promise Pattern* fornece um mecanismo para lidar com operações assíncronas de uma forma mais estruturada e legível em comparação com os *callbacks* tradicionais. Representa a eventual conclusão (ou falha) de uma operação assíncrona e permite encadear ações com base em seu resultado. Isso promove uma organização de código mais limpa e facilita o tratamento de erros, melhorando o fluxo e a capacidade de manutenção do código assíncrono.
+O *Promise Pattern* fornece um mecanismo para lidar com operações assíncronas de uma forma mais estruturada e legível em comparação com os *Callbacks* vistos anteriormente. Representa a eventual conclusão (ou falha) de uma operação assíncrona e permite encadear ações com base em seu resultado. Isso promove uma organização de código mais limpa e facilita o tratamento de erros, melhorando o fluxo e a capacidade de manutenção do código assíncrono.
 
 ## **Principais casos de uso**
 
@@ -171,20 +171,20 @@ getUser(1)
 **Pros**
 
 - **Legibilidade aprimorada:** Estrutura de código mais clara em comparação com *callbacks* aninhados.
-- **Tratamento de erros simplificado:** Mecanismo centralizado de tratamento de erros.
+- **Tratamento de erros simplificado:** Mecanismo centralizado com relação aos tratamentos de erros.
 - **Capacidades de encadeamento:** Permite fácil sequenciamento de operações assíncronas.
 - **Testabilidade aprimorada:** Mais fácil de isolar e testar unidades assíncronas.
 - **Sintaxe async/await:** Fornece uma sensação mais síncrona para código assíncrono.
 
 **Contras**
 
-- **Curva de aprendizado potencial:** Compreender as *Promises* inicialmente requer esforço.
+- **Curva de aprendizado potencial:** Compreender as *Promises* inicialmente requer esforço. (Eu pelo menos demorei kkkk)
 - **Evita Callback Hell:** Não é uma solução mágica, ainda é necessário um planejamento cuidadoso.
 - **Risco de uso excessivo:** Nem toda operação assíncrona requer *Promises*.
 
 # **Async/Await Pattern**
 
-O *Async/Await Pattern* baseia-se em *Promises*, oferecendo uma sintaxe semelhante ao código síncrono para lidar com operações assíncronas. Usando as palavras-chave `async` e `await`, você pode escrever código que parece ser executado sequencialmente, mesmo que envolva etapas assíncronas. Isso promove um código mais limpo e legível em comparação com *Promises* ou *Callbacks* tradicionais, melhorando a capacidade de manutenção e a experiência do desenvolvedor.
+O *Async/Await Pattern* baseia-se em *Promises*, oferecendo uma sintaxe semelhante ao código síncrono para lidar com operações assíncronas. Usando essas palavrinhas-chaves: `async` e `await`, você pode escrever código que parece ser executado sequencialmente, mesmo que envolva etapas assíncronas. Isso promove um código mais limpo e legível em comparação com *Promises* ou *Callbacks*, melhorando a capacidade de manutenção e a experiência do dev.
 
 ## **Principais casos de uso:**
 
@@ -247,7 +247,6 @@ async function fetchAndProcessData(url) {
 - **Nuances de tratamento de erros:** `try...catch` ainda são necessários para tratamento de erros nas funções `async`.
 - **Possível uso indevido:** o uso excessivo de `await` pode bloquear o loop de eventos, impactando o desempenho.
 
-Isso é tudo sobre *Design Patterns* e suas relações assincronicidade em *NodeJS*.
+Isso é tudo sobre *Design Patterns* e suas relações de assincronicidade em *NodeJS*.
 
-
-***OBRIGADO PELA LEITURA - DIEGO GABS***
+Obrigado por ler até aqui! **- Diego Gabs**

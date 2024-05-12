@@ -39,7 +39,7 @@ O *Callback Pattern* (também conhecido como *Retorno de Chamada*) é um conceit
 - **Agendamento de tarefas:** Execução de funções após um atraso ou em intervalos específicos.
 
 ## **Exemplos de código**
-Um uso básico de *Callback*:
+Uso básico de *Callback*:
 
 ```javascript
 fs.readFile('arquivo.txt', (err, data) => {
@@ -168,7 +168,7 @@ getUser(1)
 
   ```
 
-**Pros**
+**Prós**
 
 - **Legibilidade aprimorada:** Estrutura de código mais clara em comparação com *callbacks* aninhados.
 - **Tratamento de erros simplificado:** Mecanismo centralizado com relação aos tratamentos de erros.
@@ -215,7 +215,7 @@ async function getUser(userId) {
 
 ```
 
-**Encadeando operações Async/Await**:
+Encadeando operações Async/Await:
 
 ```javascript
 async function fetchAndProcessData(url) {

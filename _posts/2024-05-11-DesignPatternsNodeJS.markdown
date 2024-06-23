@@ -17,14 +17,14 @@ O *Design Patterns* oferece vários benefícios como:
 
 No NodeJS, onde tudo é executado de forma *assíncrona*, dominar as *patterns assíncronas* é crucial, pontuarei os principais motivos:
 
-**1. Callbacks:** Os clássicos callbacks, aqui as funções são passadas como argumentos para operações assíncronas que são chamadas após a finalização. Onde pode ocasionar a famosa *"callback hell"* (calma que irei explicar com mais detalhes quando chegarmos lá) onde as funções são aninhadas, mas ainda é amplamente utilizado.
+**1. Callbacks:** Os clássicos *Callbacks*, aqui as funções são passadas como argumentos para operações assíncronas que são chamadas após a finalização. Onde pode ocasionar a famosa *"callback hell"* (calma que irei explicar com mais detalhes quando chegarmos lá) onde as funções são aninhadas, mas ainda é amplamente utilizado.
 
-**2. Promises:** É oferecido uma maneira mais limpa de gerenciar o fluxo assíncrono. Representam o resultado eventual *(sucesso ou falha)* de uma operação, permitindo encadeamento e tratamento de erros.
+**2. Promises:** É oferecido uma maneira mais limpa de gerenciar o fluxo assíncrono. Representam o resultado eventual *(seja de deu ruim ou deu bom)* de uma operação, permitindo encadeamento e tratamento de erros.
 
 **3. Async/Await:** Um patamar acima do *Promises*, onde o código assíncrono fica bem parecido com um código síncrono. Onde as funções `async` e `await` podem garantir um fluxo mais limpo.
 
-Agora que demos uma breve introdução sobre as três *Patterns* mais utilizadas, podemos começar o artigo :)
-Onde veremos com mais detalhes essas três *patterns assíncronas* atuando no *NodeJS* com mais detalhes.
+Agora que demos uma breve introdução sobre as três *Patterns* mais utilizadas, podemos começar o artigo.
+Onde veremos com mais detalhes essas três *Patterns Assíncronas* atuando no *NodeJS* com mais detalhes. :)
 
 # **Callback Pattern**
 

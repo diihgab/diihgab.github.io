@@ -2,7 +2,7 @@
 layout: post
 title: "Orquestração de Fluxo de Trabalho com Apache Doris Job Scheduler"
 date: 2024-06-23 11:00:00 -0300
-categories: [Arquitetura de Software, Sistemas Distribuídos]
+categories: [BigData, Automatização]
 tags: apachedoris jobscheduler automatizaçãodedados gestãoeficiente bigdata dataautomation datamanagement
 image: "/assets/img/orquestra.PNG"
 ---
@@ -29,7 +29,6 @@ Criar e agendar tarefas no *Doris* é *surpreendentemente simples*. Vamos explor
 Aqui está a estrutura para criar um trabalho:
 
 ```sql
-Copiar código
 CREATE TRABALHO nome_trabalho
 ON SCHEDULE agendamento
 [COMMENT 'comentário']
@@ -51,21 +50,18 @@ Vamos tornar isso mais concreto com alguns exemplos:
 **Exemplo 1: Trabalho recorrente a cada minuto**
 
 ```sql
-Copiar código
 CREATE TRABALHO meu_trabalho ON SCHEDULE EVERY 1 MINUTE DO INSERT INTO bd1.tbl1 SELECT * FROM bd2.tbl2;
 ```
 
 **Exemplo 2: Trabalho único em uma data específica**
 
 ```sql
-Copiar código
 CREATE TRABALHO meu_trabalho ON SCHEDULE AT '2025-01-01 00:00:00' DO INSERT INTO bd1.tbl1 SELECT * FROM bd2.tbl2;
 ```
 
 **Exemplo 3: Trabalho recorrente diário a partir de uma data**
 
 ```sql
-Copiar código
 CREATE TRABALHO meu_trabalho ON SCHEDULE EVERY 1 DAY STARTS '2025-01-01 00:00:00' DO INSERT INTO bd1.tbl1 SELECT * FROM bd2.tbl2 WHERE create_time >= days_add(now(), -1);
 ```
 
@@ -77,7 +73,6 @@ Agora, vamos falar sobre algo realmente *emocionante*: **sincronização automá
 **Passo 1: Criar uma tabela no *Doris***
 
 ```sql
-Copiar código
 CREATE TABLE IF NOT EXISTS atividade_usuario (
     `id_usuario` LARGEINT NOT NULL COMMENT "ID do Usuário",
     `data` DATE NOT NULL COMMENT "Data da importação de dados",
@@ -97,7 +92,6 @@ PROPERTIES ("replication_allocation" = "tag.location.default: 1");
 **Passo 2: Criar um catálogo no *Doris* para o *MySQL***
 
 ```sql
-Copiar código
 CREATE CATALOG atividade PROPERTIES (
     "type"="jdbc",
     "user"="root",
@@ -112,7 +106,6 @@ CREATE CATALOG atividade PROPERTIES (
 **Trabalho único para carga massiva de dados**
 
 ```sql
-Copiar código
 CREATE TRABALHO trabalho_unico
 ON SCHEDULE AT '2024-08-10 03:00:00'
 DO INSERT INTO atividade_usuario FROM SELECT * FROM atividade.usuario.atividade;
@@ -121,7 +114,6 @@ DO INSERT INTO atividade_usuario FROM SELECT * FROM atividade.usuario.atividade;
 **Trabalho regular para atualização diária**
 
 ```sql
-Copiar código
 CREATE TRABALHO carga_agendada
 ON SCHEDULE EVERY 1 DAY
 DO INSERT INTO atividade_usuario FROM SELECT * FROM atividade.usuario.atividade WHERE create_time >= days_add(now(), -1);
@@ -149,4 +141,4 @@ Obrigado por ler até aqui! **- Diego Gabs**
 
 ---
 
-[^assincronas]: Sobre Códigos Assíncronos: [https://diihgab.github.io/posts/DesignPatternsNodeJS/]
+[^assincronas]: Sobre Códigos Assíncronos: https://diihgab.github.io/posts/DesignPatternsNodeJS/

@@ -4,7 +4,7 @@ title: "Princípios de liderança da Amazon"
 date: 2024-12-29 11:00:00 -0300
 categories: [Liderança, Amazon]
 tags: liderança cultura inovação
-image: "/assets/img/amazon.PNG"
+image: "/assets/img/amazon.jpeg"
 ---
 
 ## 1. Obsessão pelo cliente

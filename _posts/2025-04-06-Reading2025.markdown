@@ -7,7 +7,7 @@ tags: leitura programação engenharia arquitetura sistemas legado
 image: "/assets/img/lib.jpeg"
 ---
 
-## 📚 Livros – Prioridade 2025
+### Livros – Prioridade 2025
 
 ### Abril
 - Código Limpo – Robert C. Martin  

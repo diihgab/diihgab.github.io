@@ -4,11 +4,11 @@ title: "Lista de Livros 2025"
 date: 2025-04-06 10:00:00 -0300
 categories: [Leitura, Desenvolvimento, Engenharia de Software]
 tags: leitura programação engenharia arquitetura sistemas legado
-image: "/assets/img/leitura2025.jpeg"
+image: "/assets/img/lib.jpeg"
 ---
 
-Nos últimos anos, dediquei uma parte importante do meu tempo livre à leitura. Grande parte dessas leituras foi composta por obras filosóficas e literárias que, de alguma forma, ajudaram a moldar meu olhar sobre o mundo: Dostoiévski, Tolstói, Camus, Clarice. Cada um deles trouxe densidade, silêncio e reflexão. Livros que não se esquecem depois da última página. Em 2025, a proposta não é abandonar esse tipo de leitura. Ela continua.
-A ideia é simples: organizar o hábito de leitura para que ele também traga frutos diretos para o ofício. Não se trata de buscar motivação ou atalhos, mas de **desenvolver profundidade técnica, clareza arquitetural, visão sistêmica e disciplina prática**. Abaixo está a curadoria para este ano. São obras voltadas para desenvolvimento, engenharia de software, organização de sistemas e práticas reais de trabalho. O objetivo é estudar com constância e, principalmente, aplicar o que for possível.
+Nos últimos anos, dediquei uma parte importante do meu tempo livre à leitura. Grande parte dessas leituras foi composta por obras filosóficas e literárias que, de alguma forma, ajudaram a moldar meu olhar sobre o mundo: *Dostoiévski, Tolstói, Camus, Clarice*. Cada um deles trouxe densidade, silêncio e reflexão. Livros que não se esquecem depois da última página. Em 2025, a proposta não é abandonar esse tipo de leitura. Ela continua.
+A ideia é simples: **organizar o hábito de leitura para que ele também traga frutos diretos para o ofício**. Não se trata de buscar motivação ou atalhos, mas de **desenvolver profundidade técnica, clareza arquitetural, visão sistêmica e disciplina prática**. Abaixo está a curadoria para este ano. São obras voltadas para desenvolvimento, engenharia de software, organização de sistemas e práticas reais de trabalho. O objetivo é estudar com constância e, principalmente, aplicar o que for possível.
 
 ## 📚 Livros – Prioridade 2025
 

@@ -7,8 +7,6 @@ tags: leitura programação engenharia arquitetura sistemas legado
 image: "/assets/img/lib.jpeg"
 ---
 
-Nos últimos anos, dediquei uma parte importante do meu tempo livre à leitura. Grande parte dessas leituras foi composta por obras literárias que, de alguma forma, ajudaram a moldar meu olhar sobre o mundo. Em 2025, a proposta não é abandonar esse tipo de leitura. Ela continua. A ideia é simples: **Não se tratar apenas de buscar motivação ou atalhos, mas de desenvolver profundidade técnica, clareza arquitetural, visão sistêmica e disciplina prática**. Abaixo está a curadoria para este ano. São obras voltadas para desenvolvimento, engenharia de software, organização de sistemas e práticas reais de desenvolvedores, na qual conseguir listar como prioridade. O objetivo é estudar com **constância** e, principalmente, **aplicar o que for possível.**
-
 ## 📚 Livros – Prioridade 2025
 
 ### Abril
@@ -47,6 +45,8 @@ Nos últimos anos, dediquei uma parte importante do meu tempo livre à leitura. 
 - SICP – Estrutura e Interpretação de Programas de Computador – Abelson & Sussman  
 
 ## Sobre o Rumo
+
+Nos últimos anos, dediquei uma parte importante do meu tempo livre à leitura. Grande parte dessas leituras foi composta por obras literárias que, de alguma forma, ajudaram a moldar meu olhar sobre o mundo. Em 2025, a proposta não é abandonar esse tipo de leitura. Ela continua. A ideia é simples: **Não se tratar apenas de buscar motivação ou atalhos, mas de desenvolver profundidade técnica, clareza arquitetural, visão sistêmica e disciplina prática**. Acima está a curadoria para este ano. São obras voltadas para desenvolvimento, engenharia de software, organização de sistemas e práticas reais de desenvolvedores, na qual conseguir listar como prioridade. O objetivo é estudar com **constância** e, principalmente, **aplicar o que for possível.**
 
 Esses livros não são novidade. Estão nas listas, nas referências, nas discussões entre engenheiros. A diferença agora é colocá-los em prática como rotina de leitura principal. O que vier além disso — romances, filosofia, história, ciência — virá como consequência natural do hábito.
 

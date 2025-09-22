@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Minha experiência aprendendo aprendizado de máquina e matemática"
-date: 2025-09-22 06:00:00 -0300
+date: 2025-09-21 06:00:00 -0300
 categories: [Aprendizado, Machine Learning, Matemática]
 tags: aprendizado-de-maquina matematica deep-learning hamming math-academy coursera kaggle scikit-learn pytorch livros
 image: "/assets/img/ml-experiencia.jpg"

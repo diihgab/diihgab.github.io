@@ -63,7 +63,7 @@ Eu não queria apenas usar uma estrutura de ML. Eu queria entender profundamente
 
 Aprendi o **Scikit-learn** em um curso de ML e usei essa ferramenta para praticar alguns desafios interessantes no **Kaggle**. O primeiro foi um problema de regressão para prever **insuficiência cardíaca** a partir de características clínicas. Foi a primeira vez que usei modelos de ML para fazer previsões. Aprendi **Naive Bayes, SVM, Regressão Logística, KNN** e modelos baseados em árvores, como **Árvore de Decisão, Floresta Aleatória e XGBoost**.
 
-O segundo foi um problema de **classificação**. A ideia do desafio era prever se os **tumores de câncer de mama** eram malignos ou benignos. Eu até escrevi um post longo sobre todo o processo e os aprendizados ao longo do caminho: **Treinamento de Modelos de ML para Classificação de Tumores de Câncer**.
+O segundo foi um problema de **classificação**. A ideia do desafio era prever se os **tumores de câncer de mama** eram malignos ou benignos.
 
 Depois de aprender sobre tudo isso, decidi dar o salto e começar a aprender sobre **aprendizado profundo** e **redes neurais**, um tópico que abordarei na próxima seção.
 
@@ -83,13 +83,7 @@ Não considero uma lacuna de conhecimento, mas sei que preciso continuar aprimor
 
 Dei uma pausa no livro para colocar os conceitos em prática. Aprendi sobre a matemática por trás das redes neurais e implementei tudo do zero, usando apenas **Python** e **matemática**.
 
-Também escrevi sobre toda essa experiência (ainda estou finalizando esta série):
-
-- **Construindo uma rede neural do zero com matemática e Python**  
-- **Construindo uma rede neural profunda do zero**  
-- **Descida de gradiente em minilote** (ainda em desenvolvimento)
-
-Atualmente, estou trabalhando na **especialização em Deep Learning de Andrew Ng**, especificamente na **otimização de desempenho**.
+Atualmente, estou trabalhando na **especialização em Deep Learning**, especificamente na **otimização de desempenho**.
 
 Depois de terminar isso, pretendo continuar trabalhando em **matemática para aprendizado profundo** (livros e *Math Academy*) e trabalhar em **redes neurais profundas avançadas** (CNN, RNN e outras arquiteturas).
 

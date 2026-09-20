@@ -30,7 +30,7 @@ Meu roteiro acabou ficando assim:
 
 ---
 
-## Domingo, 14/09/2025: entendendo o que o modelo deve responder
+## Domingo, 14/09/2026: entendendo o que o modelo deve responder
 
 Minha primeira anotação foi uma pergunta aparentemente simples: **o modelo deve escolher uma doença ou pode indicar várias?**
 
@@ -85,7 +85,7 @@ print(train_df[label_columns].isna().sum())
 
 Essa etapa parece simples, mas mudou minha forma de olhar o projeto. O CSV deixou de ser apenas uma tabela que alimentaria a rede e passou a ser parte da definição do problema. Antes de pensar em desempenho, eu precisava entender de onde os rótulos vieram e o que exatamente um valor positivo representava.
 
-## Segunda-feira, 15/09/2025: vazamento de dados
+## Segunda-feira, 15/09/2026: vazamento de dados
 
 Uma pessoa pode possuir várias radiografias no conjunto de dados. Se separarmos as linhas aleatoriamente, imagens do mesmo paciente podem aparecer no treino e na validação.
 
@@ -132,7 +132,7 @@ print(f"Pacientes no treino: {df_train['PatientId'].nunique()}")
 print(f"Pacientes na validação: {df_valid['PatientId'].nunique()}")
 ```
 
-## Terça-feira, 16/09/2025: fazendo as imagens chegarem ao modelo
+## Terça-feira, 16/09/2026: fazendo as imagens chegarem ao modelo
 
 O `Dataset` precisa carregar a imagem e devolver um vetor com todos os rótulos. Como modelos pré-treinados normalmente esperam três canais, a radiografia em escala de cinza é convertida para RGB.
 
@@ -259,7 +259,7 @@ valid_loader = DataLoader(
 )
 ```
 
-## Quarta-feira, 17/09/2025: acurácia
+## Quarta-feira, 17/09/2026: acurácia
 
 Imagine um conjunto no qual 98% das imagens não apresentam determinada patologia. Um classificador que sempre responde “ausente” alcança 98% de acurácia, embora seja completamente inútil para encontrar casos positivos.
 
@@ -287,7 +287,7 @@ No meu caderno, escrevi uma frase para não esquecer: **desbalanceamento não é
 
 Também é importante calcular `pos_weight` apenas com o treino. Usar a distribuição da validação ou do teste para tomar essa decisão mistura informações entre as etapas do experimento.
 
-## Quinta-feira, 18/09/2025: finalmente escolhendo a rede
+## Quinta-feira, 18/09/2026: finalmente escolhendo a rede
 
 Em conjuntos pequenos, treinar uma CNN inteira do zero costuma ser difícil. Com **transfer learning**, começamos com representações aprendidas em um conjunto maior e adaptamos a última camada ao nosso problema.
 
@@ -424,7 +424,7 @@ for epoch in range(10):
 
 O checkpoint guarda mais do que os pesos porque eu quero saber qual ordem de rótulos foi usada e em que momento o modelo foi salvo. Ainda faltariam as versões das bibliotecas, os hiperparâmetros e o identificador da divisão dos dados para uma rastreabilidade melhor.
 
-## Sexta-feira, 19/09/2025: os resultados
+## Sexta-feira, 19/09/2026: os resultados
 
 Antes de calcular novas métricas, voltei aos resultados publicados no experimento que usei como referência. A CNN simples foi treinada por 25 épocas. O registro numérico mostra `loss=0,5352`, `accuracy=0,522` e `ROC-AUC=0,4867` na primeira época; na segunda, `loss=0,4899`, `accuracy=0,562` e `ROC-AUC=0,5037`. Ao final, foram reportados aproximadamente `loss=0,45`, `accuracy=0,53` e `ROC-AUC=0,66`.
 
@@ -560,7 +560,7 @@ Esse passo também pode revelar *shortcuts*: pistas correlacionadas ao rótulo, 
 
 Eu registraria cada hipótese sem tratá-la imediatamente como conclusão. Em projetos desse tipo, é muito fácil olhar uma visualização, encontrar uma história plausível e confundir plausibilidade com evidência.
 
-## Sábado, 20/09/2025: tudo o que este projeto ainda não responde
+## Sábado, 20/09/2026: tudo o que este projeto ainda não responde
 
 Mesmo um pipeline tecnicamente correto deixa perguntas importantes em aberto:
 
